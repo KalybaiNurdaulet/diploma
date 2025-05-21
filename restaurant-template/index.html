@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название Ресторана - Изысканная Кухня</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Ресторан "Вкус"</a>
+            <nav>
+                <button class="menu-toggle" aria-label="Открыть навигацию">☰</button>
+                <ul class="nav-menu">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li><a href="#reservation" class="btn btn-primary">Бронь столика</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Добро пожаловать в "Вкус"</h1>
+            <p>Насладитесь лучшими блюдами европейской кухни в уютной атмосфере.</p>
+            <a href="#menu" class="btn btn-secondary">Наше Меню</a>
+        </div>
+    </section>
+
+    <section id="about" class="container section-padding">
+        <h2>О Нашем Ресторане</h2>
+        <div class="about-content">
+            <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Уютный интерьер ресторана 'Вкус'">
+            <p>Ресторан "Вкус" – это место, где традиции встречаются с современностью. Мы гордимся тем, что предлагаем нашим гостям только самые свежие ингредиенты, приготовленные с любовью и мастерством наших шеф-поваров. Уютная атмосфера, внимательное обслуживание и изысканные блюда сделают ваш вечер незабываемым.</p>
+        </div>
+    </section>
+
+    <section id="menu" class="section-padding bg-light">
+        <div class="container">
+            <h2>Наше Меню</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Свежий салат">
+                    <h3>Салат "Летний Бриз"</h3>
+                    <p>Легкий и освежающий салат с сезонными овощами, зеленью и пикантной заправкой.</p>
+                    <span class="price">420 ₽</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Аппетитный стейк">
+                    <h3>Стейк "Шеф-повара"</h3>
+                    <p>Отборный стейк, приготовленный до идеальной прожарки, подается с овощами гриль.</p>
+                    <span class="price">1350 ₽</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1621996346565-e326e7e99dd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Паста с томатным соусом">
+                    <h3>Паста "Аль Помодоро"</h3>
+                    <p>Классическая итальянская паста со свежими томатами, базиликом и пармезаном.</p>
+                    <span class="price">580 ₽</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Шоколадный десерт">
+                    <h3>Шоколадный Фондан</h3>
+                    <p>Горячий шоколадный кекс с жидкой начинкой, подается с шариком ванильного мороженого.</p>
+                    <span class="price">380 ₽</span>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">Посмотреть все меню</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container section-padding">
+        <h2>Галерея</h2>
+        <div class="gallery-grid">
+            <!-- НОВЫЕ ИЗОБРАЖЕНИЯ ДЛЯ ГАЛЕРЕИ -->
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Элегантная сервировка стола в ресторане">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=781&q=80" alt="Аппетитная пицца на деревянном столе">
+            <img src="https://images.unsplash.com/photo-1528605248644-eff6dd3079a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Друзья наслаждаются ужином в ресторане">
+            <img src="https://images.unsplash.com/photo-1533777857889-45b40400f309?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Уютная атмосфера летней террасы ресторана">
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-dark text-light">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contact-info">
+                <p><strong>Адрес:</strong> ул. Примерная, 123, Город</p>
+                <p><strong>Телефон:</strong> <a href="tel:+79001234567">+7 (900) 123-45-67</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@vkus-restaurant.ru">info@vkus-restaurant.ru</a></p>
+                <p><strong>Часы работы:</strong> Пн-Вс: 12:00 - 23:00</p>
+            </div>
+            <form id="reservation-form" class="reservation-form">
+                <h3>Забронировать столик</h3>
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                <input type="date" name="date" required>
+                <input type="time" name="time" required>
+                <input type="number" name="guests" placeholder="Количество гостей" min="1" required>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Ресторан "Вкус". Все права защищены.</p>
+            <p>Дизайн и разработка: Ваше Имя/Название Студии</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+:root {
+    --showcase-primary-color: #3498db; /* Синий */
+    --showcase-secondary-color: #2ecc71; /* Зеленый */
+    --showcase-dark-color: #2c3e50;    /* Темно-серый-синий */
+    --showcase-light-color: #ecf0f1;   /* Светло-серый */
+    --showcase-text-color: #333;
+    --showcase-font-body: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* Плавный скролл, если будут внутренние якоря */
+}
+
+body {
+    font-family: var(--showcase-font-body);
+    line-height: 1.7;
+    color: var(--showcase-text-color);
+    background-color: #f4f6f8; /* Немного другой оттенок фона для разнообразия */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--showcase-dark-color);
+    margin-bottom: 0.8rem;
+    font-weight: 700; /* Сделаем заголовки чуть жирнее */
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--showcase-primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9; /* Затемненный основной цвет при наведении */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Убирает лишние отступы под изображением */
+}
+
+.container {
+    width: 90%; /* Используем проценты для лучшей адаптивности */
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto;
+    padding: 0 15px; /* Небольшие отступы по бокам */
+}
+
+/* Header */
+.showcase-header {
+    background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.95)), url('https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80') no-repeat center center/cover; /* Добавим фоновое изображение для хедера */
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 5px solid var(--showcase-primary-color);
+}
+.showcase-header h1 {
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.showcase-header p {
+    font-size: 1.2rem;
+    color: var(--showcase-light-color);
+    font-weight: 300;
+}
+
+/* Main Content */
+.showcase-main {
+    padding: 50px 0;
+}
+
+/* Стили для Grid Layout карточек */
+.showcase-main .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Адаптивные колонки, мин. ширина 320px */
+    gap: 35px; /* Пространство между карточками */
+}
+
+.template-card {
+    background-color: #fff;
+    border-radius: 10px; /* Более скругленные углы */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08); /* Чуть более выраженная тень */
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.template-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.template-preview {
+    width: 100%;
+    height: 220px; /* Фиксированная высота для превью */
+    object-fit: cover; /* Масштабирование изображения для заполнения */
+    object-position: top; /* Фокус на верхней части изображения */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.template-card h2 {
+    font-size: 1.6rem;
+    color: var(--showcase-primary-color);
+    margin-bottom: 10px;
+}
+
+.template-description {
+    font-size: 0.95rem;
+    color: #555;
+    flex-grow: 1; /* Позволяет описанию занимать доступное пространство */
+    margin-bottom: 15px;
+}
+
+.template-features h3 {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: var(--showcase-dark-color);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+.template-features ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.9rem;
+    color: #444;
+}
+.template-features ul li {
+    margin-bottom: 6px;
+    padding-left: 20px;
+    position: relative;
+}
+.template-features ul li::before {
+    content: '✓'; /* Галочка */
+    color: var(--showcase-secondary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.template-actions {
+    margin-top: auto; /* Прижимает кнопки к низу карточки */
+    padding-top: 20px; /* Отступ сверху перед кнопками */
+    display: flex; /* Для расположения кнопок в ряд */
+    gap: 10px; /* Расстояние между кнопками */
+    justify-content: center; /* Центрирование кнопок */
+}
+
+.btn {
+    display: inline-flex; /* Для выравнивания иконки и текста, если будут иконки */
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px; /* Немного скорректировал паддинги */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px; /* Небольшой межбуквенный интервал */
+    flex-grow: 1; /* Кнопки будут занимать равное пространство, если их две */
+    max-width: 200px; /* Ограничение ширины кнопки */
+}
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background-color: var(--showcase-primary-color);
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: var(--showcase-secondary-color);
+    color: #fff;
+}
+.btn-secondary:hover {
+    background-color: #27ae60;
+}
+
+/* Footer */
+.showcase-footer {
+    background-color: var(--showcase-dark-color);
+    color: var(--showcase-light-color);
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9rem;
+    margin-top: 40px; /* Отступ от основного контента */
+}
+.showcase-footer p {
+    margin-bottom: 0;
+    opacity: 0.8; /* Немного приглушить текст */
+}
+
+/* Адаптивность для витрины */
+@media (max-width: 992px) { /* Планшеты */
+    .showcase-main .container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .showcase-header h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 768px) { /* Мобильные устройства */
+    .showcase-header h1 {
+        font-size: 2rem;
+    }
+    .showcase-header p {
+        font-size: 1rem;
+    }
+    .showcase-main .container {
+        grid-template-columns: 1fr; /* Одна колонка на мобильных */
+        gap: 25px;
+    }
+    .template-card {
+        padding: 20px;
+    }
+    .template-card h2 {
+        font-size: 1.4rem;
+    }
+    .template-actions {
+        flex-direction: column; /* Кнопки одна под другой */
+    }
+    .btn {
+        max-width: 100%; /* Кнопки могут занимать всю доступную ширину в колонке */
+        margin-bottom: 10px;
+    }
+    .template-actions .btn:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) { /* Очень маленькие экраны */
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    .showcase-header {
+        padding: 40px 0;
+    }
+    .showcase-header h1 {
+        font-size: 1.8rem;
+    }
+     .template-preview {
+        height: 180px;
+    }
+}

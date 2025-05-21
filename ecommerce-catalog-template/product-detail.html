@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название Товара - Наш Магазин</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="shop-header">
+        <div class="container">
+            <a href="index.html" class="shop-logo">
+                <img src="img/logo-shop.png" alt="Логотип Магазина">
+                <span>ShopName</span>
+            </a>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+                <ul>
+                    <li><a href="index.html">Каталог</a></li>
+                    <li><a href="#">Новинки</a></li>
+                    <li><a href="#">Скидки</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" aria-label="Поиск"><i class="fas fa-search"></i></a>
+                <a href="#" aria-label="Аккаунт"><i class="fas fa-user"></i></a>
+                <a href="#" aria-label="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container shop-main product-detail-page">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Каталог</a></li>
+                <li class="breadcrumb-item"><a href="#">Категория 1</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Стильная футболка "Классика"</li>
+            </ol>
+        </nav>
+
+        <div class="product-detail-content">
+            <div class="product-gallery">
+                <img src="img/product1.jpg" alt="Стильная футболка Классика - вид 1" class="main-product-image">
+                <div class="thumbnail-images">
+                    <img src="img/product1-thumb1.jpg" alt="Миниатюра 1" class="thumbnail active">
+                    <img src="img/product1-thumb2.jpg" alt="Миниатюра 2" class="thumbnail">
+                    <img src="img/product1-thumb3.jpg" alt="Миниатюра 3" class="thumbnail">
+                </div>
+            </div>
+            <div class="product-information">
+                <h1>Стильная футболка "Классика"</h1>
+                <p class="product-sku">Артикул: TSH-CL001</p>
+                <p class="product-price-detail">1500 ₽</p>
+                
+                <div class="product-options">
+                    <div class="option-group">
+                        <label for="size-select">Размер:</label>
+                        <select id="size-select" name="size">
+                            <option value="s">S</option>
+                            <option value="m" selected>M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label for="color-select">Цвет:</label>
+                        <div class="color-swatches">
+                            <span class="color-swatch active" style="background-color: #333;" data-color="black" title="Черный"></span>
+                            <span class="color-swatch" style="background-color: #fff; border: 1px solid #ccc;" data-color="white" title="Белый"></span>
+                            <span class="color-swatch" style="background-color: #007bff;" data-color="blue" title="Синий"></span>
+                        </div>
+                    </div>
+                    <div class="option-group">
+                        <label for="quantity-input">Количество:</label>
+                        <input type="number" id="quantity-input" name="quantity" value="1" min="1" max="10">
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-add-to-cart-detail">Добавить в корзину</button>
+                
+                <div class="product-description">
+                    <h3>Описание товара</h3>
+                    <p>Эта классическая футболка изготовлена из 100% высококачественного хлопка, что обеспечивает комфорт и долговечность. Идеально подходит для повседневной носки.</p>
+                    <ul>
+                        <li>Материал: 100% хлопок</li>
+                        <li>Крой: Прямой</li>
+                        <li>Страна производства: Россия</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="related-products">
+            <h2 class="section-title">Похожие товары</h2>
+            <div class="product-grid">
+                 <!-- Скопируйте сюда карточки товаров, похожие на те, что в index.html -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="shop-footer">
+         <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>О Магазине</h4>
+                    <p>ShopName - ваш лучший выбор для стильной одежды и аксессуаров. Качество и доступные цены.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Клиентам</h4>
+                    <ul>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат товара</a></li>
+                        <li><a href="#">Таблица размеров</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Контакты</h4>
+                    <p>Email: info@shopname.com</p>
+                    <p>Телефон: +7 (000) 000-00-00</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-text">
+                © <span id="current-year"></span> ShopName. Все права защищены.
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

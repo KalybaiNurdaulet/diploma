@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заголовок Статьи - Мой Блог</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="blog-header">
+        <div class="container">
+            <a href="index.html" class="logo">Название Блога</a>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Категории</a></li>
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container page-wrapper">
+        <main class="main-content">
+            <article class="single-post">
+                <header class="post-header">
+                    <span class="post-category">Технологии</span>
+                    <h1 class="post-title">Удивительные возможности нового ИИ</h1>
+                    <div class="post-meta">
+                        <span class="post-date">15 Октября, 2023</span> | <span class="post-author">Иван Петров</span>
+                    </div>
+                </header>
+                <img src="img/post-image1.jpg" alt="Заголовок первой статьи" class="featured-image">
+                <div class="post-content-full">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    
+                    <h2>Подзаголовок первого уровня</h2>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    
+                    <blockquote>
+                        "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+                    </blockquote>
+                    
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+                    
+                    <h3>Подзаголовок второго уровня</h3>
+                    <ul>
+                        <li>Пункт списка один</li>
+                        <li>Пункт списка два с <a href="#">ссылкой</a></li>
+                        <li>Пункт списка три</li>
+                    </ul>
+                    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                </div>
+
+                <div class="post-author-box">
+                    <img src="img/author-avatar.jpg" alt="Иван Петров" class="author-avatar">
+                    <div class="author-info">
+                        <h4>Об авторе: Иван Петров</h4>
+                        <p>Энтузиаст технологий и писатель. Люблю делиться последними новостями из мира ИИ и гаджетов.</p>
+                        <a href="#">Все посты автора →</a>
+                    </div>
+                </div>
+            </article>
+            <!-- Здесь могут быть комментарии -->
+        </main>
+
+        <aside class="sidebar">
+             <div class="widget">
+                <h3 class="widget-title">Поиск</h3>
+                <form class="search-form">
+                    <input type="search" placeholder="Введите запрос...">
+                    <button type="submit">Искать</button>
+                </form>
+            </div>
+            <div class="widget">
+                <h3 class="widget-title">Категории</h3>
+                <ul>
+                    <li><a href="#">Технологии (10)</a></li>
+                    <li><a href="#">Путешествия (5)</a></li>
+                    <li><a href="#">Кулинария (7)</a></li>
+                    <li><a href="#">Стиль жизни (12)</a></li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h3 class="widget-title">Последние посты</h3>
+                <ul>
+                    <li><a href="single-post.html">Удивительные возможности нового ИИ</a></li>
+                    <li><a href="#">Лучшие места для осеннего отдыха</a></li>
+                    <li><a href="#">Рецепт идеального яблочного пирога</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="blog-footer">
+        <div class="container">
+            <p>© <span id="current-year"></span> Название Блога. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

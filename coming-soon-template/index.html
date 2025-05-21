@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название Проекта - Скоро Открытие!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="coming-soon-container">
+        <div class="content-wrapper">
+            <div class="logo-placeholder">[ Ваш Логотип ]</div>
+            <h1>Мы Почти Готовы!</h1>
+            <p class="subtitle">Наш новый удивительный сайт <span class="project-name">"Название Проекта"</span> скоро будет запущен.<br>Оставайтесь на связи!</p>
+
+            <div id="countdown-timer">
+                <div class="timer-unit">
+                    <span id="days">00</span>
+                    <p>Дней</p>
+                </div>
+                <div class="timer-unit">
+                    <span id="hours">00</span>
+                    <p>Часов</p>
+                </div>
+                <div class="timer-unit">
+                    <span id="minutes">00</span>
+                    <p>Минут</p>
+                </div>
+                <div class="timer-unit">
+                    <span id="seconds">00</span>
+                    <p>Секунд</p>
+                </div>
+            </div>
+
+            <p class="notify-text">Хотите узнать первыми о запуске? Оставьте свой email:</p>
+            <form id="notify-form">
+                <input type="email" id="email-input" placeholder="Введите ваш email" required>
+                <button type="submit">Уведомить меня</button>
+            </form>
+            <p id="form-message"></p>
+
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script> <!-- Для иконок -->
+    <script src="js/script.js"></script>
+</body>
+</html>

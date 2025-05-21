@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Имя Фотографа - Портфолио</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Иконки (например, Font Awesome) для меню и соцсетей, если нужны -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">Имя Фотографа</a>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+                <ul>
+                    <li><a href="index.html" class="active">Портфолио</a></li>
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="portfolio-gallery" class="container section-padding">
+            <h1>Галерея работ</h1>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="portraits">Портреты</button>
+                <button class="filter-btn" data-filter="landscapes">Пейзажи</button>
+                <button class="filter-btn" data-filter="events">События</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Пример элементов галереи -->
+                <div class="gallery-item" data-category="portraits">
+                    <img src="img/photo1.jpg" alt="Описание фото 1" data-src-large="img/photo1-large.jpg">
+                </div>
+                <div class="gallery-item" data-category="landscapes">
+                    <img src="img/photo2.jpg" alt="Описание фото 2" data-src-large="img/photo2-large.jpg">
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="img/photo3.jpg" alt="Описание фото 3" data-src-large="img/photo3-large.jpg">
+                </div>
+                <div class="gallery-item" data-category="portraits">
+                    <img src="img/photo4.jpg" alt="Описание фото 4" data-src-large="img/photo4-large.jpg">
+                </div>
+                <div class="gallery-item" data-category="landscapes">
+                    <img src="img/photo5.jpg" alt="Описание фото 5" data-src-large="img/photo5-large.jpg">
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="img/photo6.jpg" alt="Описание фото 6" data-src-large="img/photo6-large.jpg">
+                </div>
+                <!-- Добавьте больше изображений -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>© <span id="current-year"></span> Имя Фотографа. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Лайтбокс (модальное окно для увеличенных изображений) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">×</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Увеличенное изображение">
+        <a class="prev-lightbox">❮</a>
+        <a class="next-lightbox">❯</a>
+        <div id="caption"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

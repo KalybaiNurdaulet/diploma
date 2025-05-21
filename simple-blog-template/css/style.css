@@ -1,0 +1,207 @@
+:root {
+    --primary-font: 'Open Sans', sans-serif;
+    --secondary-font: 'Lora', serif;
+    --text-color: #333;
+    --heading-color: #222;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+    --border-color: #e0e0e0;
+    --bg-light: #f9f9f9;
+    --white: #fff;
+}
+
+body {
+    font-family: var(--primary-font);
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: var(--white);
+    font-size: 16px;
+}
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a { color: var(--link-color); text-decoration: none; }
+a:hover { color: var(--link-hover-color); text-decoration: underline; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* Header */
+.blog-header {
+    background-color: var(--white);
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky; /* или fixed */
+    top: 0;
+    z-index: 1000;
+}
+.blog-header .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: var(--secondary-font); font-size: 1.8rem; font-weight: bold; color: var(--heading-color); text-decoration: none; }
+.main-nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+.main-nav li { margin-left: 20px; }
+.main-nav a { color: var(--text-color); font-weight: 600; text-decoration: none; }
+.main-nav a.active, .main-nav a:hover { color: var(--link-color); }
+.menu-toggle { display: none; font-size: 1.8rem; background: none; border: none; cursor: pointer; }
+
+/* Page Wrapper & Content Area */
+.page-wrapper {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.main-content {
+    flex: 3; /* Занимает 3/4 ширины */
+}
+.sidebar {
+    flex: 1; /* Занимает 1/4 ширины */
+    padding-top: 10px; /* Для выравнивания с первым постом */
+}
+
+/* Post Excerpt */
+.post-excerpt {
+    background-color: var(--white);
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    overflow: hidden; /* Для скругления */
+}
+.post-thumbnail {
+    width: 100%;
+    height: 250px; /* или auto */
+    object-fit: cover;
+    border-bottom: 1px solid var(--border-color);
+}
+.post-excerpt .post-content { padding: 20px; }
+.post-header { margin-bottom: 15px; }
+.post-category {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--link-color);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+.post-title {
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--heading-color);
+}
+.post-title a { color: inherit; text-decoration: none; }
+.post-title a:hover { color: var(--link-color); }
+.post-meta { font-size: 0.85rem; color: #777; }
+.post-excerpt p { margin-bottom: 15px; color: #555; }
+.read-more { font-weight: 600; }
+
+/* Single Post */
+.single-post { background-color: var(--white); padding: 25px; border: 1px solid var(--border-color); border-radius: 5px;}
+.single-post .post-header { text-align: center; margin-bottom: 25px; }
+.single-post .post-title { font-size: 2.2rem; }
+.featured-image { width: 100%; margin-bottom: 25px; border-radius: 4px; }
+.post-content-full h2 { font-family: var(--secondary-font); font-size: 1.6rem; margin-top: 30px; margin-bottom: 15px; }
+.post-content-full h3 { font-family: var(--secondary-font); font-size: 1.4rem; margin-top: 25px; margin-bottom: 10px; }
+.post-content-full blockquote {
+    border-left: 4px solid var(--link-color);
+    padding-left: 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #555;
+}
+.post-content-full ul, .post-content-full ol { margin-left: 20px; margin-bottom: 20px; }
+
+.post-author-box {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.author-avatar { width: 80px; height: 80px; border-radius: 50%; }
+.author-info h4 { margin-top: 0; margin-bottom: 5px; font-family: var(--secondary-font); }
+.author-info p { font-size: 0.9rem; margin-bottom: 5px; color: #555;}
+
+/* Pagination */
+.pagination { text-align: center; margin-top: 30px; }
+.page-numbers {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 3px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    color: var(--text-color);
+}
+.page-numbers.current, .page-numbers:hover {
+    background-color: var(--link-color);
+    color: var(--white);
+    border-color: var(--link-color);
+    text-decoration: none;
+}
+
+/* Sidebar Widgets */
+.widget {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+.widget-title {
+    font-family: var(--secondary-font);
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+.widget ul { list-style: none; padding: 0; margin: 0; }
+.widget li { margin-bottom: 8px; }
+.widget li a { color: #555; }
+.search-form input[type="search"] {
+    width: calc(100% - 85px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
+}
+.search-form button {
+    padding: 8px 15px;
+    background-color: var(--link-color);
+    color: var(--white);
+    border: 1px solid var(--link-color);
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    margin-left: -5px; /* Для стыковки */
+}
+.search-form button:hover { background-color: var(--link-hover-color); }
+
+/* Footer */
+.blog-footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+.blog-footer p { margin: 0; }
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .page-wrapper { flex-direction: column; }
+    .main-content, .sidebar { flex: none; width: 100%; }
+    .sidebar { margin-top: 30px; }
+    .menu-toggle { display: block; }
+    .main-nav ul {
+        display: none; flex-direction: column; position: absolute;
+        top: 100%; left: 0; width: 100%;
+        background-color: var(--white); padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .main-nav ul.active { display: flex; }
+    .main-nav li { margin: 10px 20px; text-align: center; }
+    .post-title { font-size: 1.5rem; }
+    .single-post .post-title { font-size: 1.8rem; }
+}
