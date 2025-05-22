@@ -1,7 +1,7 @@
 :root {
     --primary-font: 'Montserrat', sans-serif;
     --text-color: #fff;
-    --accent-color: #ff6b6b; /* Яркий акцент */
+    --accent-color: #ff6b6b; 
     --overlay-color: rgba(0, 0, 0, 0.6);
     --input-bg: rgba(255, 255, 255, 0.1);
     --input-border: rgba(255, 255, 255, 0.3);
@@ -12,12 +12,13 @@ body, html {
     margin: 0;
     font-family: var(--primary-font);
     color: var(--text-color);
-    overflow: hidden; /* Чтобы не было прокрутки */
+    overflow: hidden; 
 }
 
 .coming-soon-container {
     height: 100%;
-    background: linear-gradient(var(--overlay-color), var(--overlay-color)), url('../img/background.jpg') no-repeat center center/cover;
+    /* Заменяем локальный путь на ссылку */
+    background: linear-gradient(var(--overlay-color), var(--overlay-color)), url('https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,11 +125,11 @@ h1 {
     transition: background-color 0.3s ease;
 }
 #notify-form button:hover {
-    background-color: #e65c5c; /* Темнее акцент */
+    background-color: #e65c5c;
 }
 #form-message {
     font-size: 0.9rem;
-    height: 20px; /* Резерв места под сообщение */
+    height: 20px;
 }
 #form-message.success { color: #a7f0a7; }
 #form-message.error { color: #f0a7a7; }
@@ -159,7 +160,7 @@ h1 {
 @media (max-width: 480px) {
     h1 { font-size: 2rem; }
     .subtitle { font-size: 1rem; }
-    #countdown-timer { gap: 10px; flex-wrap: wrap; } /* Таймер может переноситься */
+    #countdown-timer { gap: 10px; flex-wrap: wrap; }
     .timer-unit { min-width: 60px; padding: 10px;}
     .timer-unit span { font-size: 1.5rem; }
     .timer-unit p { font-size: 0.7rem; }

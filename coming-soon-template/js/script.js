@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Установите дату и время запуска (год, месяц (0-11), день, час, минута, секунда)
-    const launchDate = new Date("Jan 1, 2026 00:00:00").getTime();
+    const launchDate = new Date("Jan 1, 2026 00:00:00").getTime(); // Өзгертіңіз!
 
     const countdownTimer = document.getElementById('countdown-timer');
     const daysEl = document.getElementById('days');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (distance < 0) {
                 clearInterval(updateCountdown);
-                countdownTimer.innerHTML = "<p style='font-size: 1.5rem;'>Мы запустились!</p>";
+                countdownTimer.innerHTML = "<p style='font-size: 1.5rem;'>Біз іске қосылдық!</p>"; // Мәтін аударылды
             }
         }, 1000);
     }
@@ -37,16 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
     if (notifyForm) {
         notifyForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            // Здесь должна быть логика отправки email (например, AJAX на сервер или интеграция с сервисом)
-            // Для примера просто показываем сообщение
-            formMessage.textContent = 'Спасибо! Мы сообщим вам о запуске.';
-            formMessage.className = 'success'; // Добавляем класс для стилизации
+            formMessage.textContent = 'Рахмет! Іске қосылу туралы сізге хабарлаймыз.'; // Мәтін аударылды
+            formMessage.className = 'success';
             emailInput.value = '';
 
             setTimeout(() => {
                 formMessage.textContent = '';
                 formMessage.className = '';
-            }, 5000); // Убрать сообщение через 5 секунд
+            }, 5000);
         });
     }
 });

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk"> <!-- Тілді қазақшаға өзгерттік -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наш Магазин - Каталог Товаров</title>
+    <title>Біздің Дүкен - Тауарлар Каталогы</title> <!-- Атау қазақша -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -12,23 +12,24 @@
     <header class="shop-header">
         <div class="container">
             <a href="index.html" class="shop-logo">
-                <img src="img/logo-shop.png" alt="Логотип Магазина">
+                <!-- Логотип (иконка + текст) -->
+                <img src="https://cdn-icons-png.flaticon.com/512/1257/1257356.png?w=740&t=st=1688127680~exp=1688128280~hmac=592a02f0b4f7a4a4e8ba2893055e1718e1b1f9a6f5d2c8a2a43fd8ac80a06477" alt="Дүкен Логотипі">
                 <span>ShopName</span>
             </a>
             <nav class="main-nav">
-                <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+                <button class="menu-toggle" aria-label="Мәзірді ашу">☰</button>
                 <ul>
                     <li><a href="index.html" class="active">Каталог</a></li>
-                    <li><a href="#">Новинки</a></li>
-                    <li><a href="#">Скидки</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Жаңа тауарлар</a></li>
+                    <li><a href="#">Жеңілдіктер</a></li>
+                    <li><a href="#">Біз туралы</a></li>
+                    <li><a href="#">Байланыс</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="#" aria-label="Поиск"><i class="fas fa-search"></i></a>
+                <a href="#" aria-label="Іздеу"><i class="fas fa-search"></i></a>
                 <a href="#" aria-label="Аккаунт"><i class="fas fa-user"></i></a>
-                <a href="#" aria-label="Корзина" class="cart-icon">
+                <a href="#" aria-label="Себет" class="cart-icon">
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
                 </a>
@@ -38,50 +39,63 @@
 
     <main class="container shop-main">
         <section class="hero-banner">
-            <h2>Осенняя Коллекция Уже Здесь!</h2>
-            <p>Откройте для себя новые тренды и получите скидку 15% на первый заказ.</p>
-            <a href="#" class="btn btn-primary">Смотреть коллекцию</a>
+            <h2>Күзгі Коллекция Келді!</h2>
+            <p>Жаңа трендтерді ашып, бірінші тапсырысқа 15% жеңілдік алыңыз.</p>
+            <a href="#" class="btn btn-primary">Коллекцияны көру</a>
         </section>
 
         <section class="product-grid-section">
-            <h2 class="section-title">Популярные товары</h2>
+            <h2 class="section-title">Танымал тауарлар</h2>
             <div class="product-filters">
-                <button class="filter-btn active" data-filter="all">Все</button>
-                <button class="filter-btn" data-filter="category1">Категория 1</button>
-                <button class="filter-btn" data-filter="category2">Категория 2</button>
+                <button class="filter-btn active" data-filter="all">Барлығы</button>
+                <button class="filter-btn" data-filter="category1">Санат 1</button>
+                <button class="filter-btn" data-filter="category2">Санат 2</button>
             </div>
             <div class="product-grid">
                 <div class="product-card" data-category="category1">
                     <a href="product-detail.html" class="product-image-link">
-                        <img src="img/product1.jpeg" alt="Название товара 1" class="product-image">
+                        <!-- Тауар 1 суреті -->
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=799&q=80" alt="Тауар 1 атауы" class="product-image">
                     </a>
                     <div class="product-info">
-                        <h3 class="product-name"><a href="product-detail.html">Стильная футболка "Классика"</a></h3>
-                        <p class="product-price">1500 ₽</p>
-                        <button class="btn btn-add-to-cart">В корзину</button>
+                        <h3 class="product-name"><a href="product-detail.html">Сәнді сағат "Классика"</a></h3>
+                        <p class="product-price">18500 ₸</p>
+                        <button class="btn btn-add-to-cart">Себетке салу</button>
                     </div>
                 </div>
                 <div class="product-card" data-category="category2">
                     <a href="product-detail.html" class="product-image-link">
-                        <img src="img/product2.jpg" alt="Название товара 2" class="product-image">
+                        <!-- Тауар 2 суреті -->
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Тауар 2 атауы" class="product-image">
                     </a>
                     <div class="product-info">
-                        <h3 class="product-name"><a href="product-detail.html">Удобные джинсы "Модерн"</a></h3>
-                        <p class="product-price">3200 ₽</p>
-                        <button class="btn btn-add-to-cart">В корзину</button>
+                        <h3 class="product-name"><a href="product-detail.html">Сымсыз құлаққаптар "Модерн"</a></h3>
+                        <p class="product-price">27200 ₸</p>
+                        <button class="btn btn-add-to-cart">Себетке салу</button>
                     </div>
                 </div>
                 <div class="product-card" data-category="category1">
                     <a href="product-detail.html" class="product-image-link">
-                        <img src="img/product3.jpg" alt="Название товара 3" class="product-image">
+                        <!-- Тауар 3 суреті -->
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Тауар 3 атауы" class="product-image">
                     </a>
                     <div class="product-info">
-                        <h3 class="product-name"><a href="product-detail.html">Элегантное платье "Вечер"</a></h3>
-                        <p class="product-price">4500 ₽</p>
-                        <button class="btn btn-add-to-cart">В корзину</button>
+                        <h3 class="product-name"><a href="product-detail.html">Спорттық аяқ киім "Жүгіру"</a></h3>
+                        <p class="product-price">34500 ₸</p>
+                        <button class="btn btn-add-to-cart">Себетке салу</button>
                     </div>
                 </div>
-                <!-- Добавьте больше товаров -->
+                 <div class="product-card" data-category="category2">
+                    <a href="product-detail.html" class="product-image-link">
+                        <!-- Тауар 4 суреті -->
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=384&q=80" alt="Тауар 4 атауы" class="product-image">
+                    </a>
+                    <div class="product-info">
+                        <h3 class="product-name"><a href="product-detail.html">Ойын құлаққаптары "Про"</a></h3>
+                        <p class="product-price">19900 ₸</p>
+                        <button class="btn btn-add-to-cart">Себетке салу</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -90,22 +104,22 @@
         <div class="container">
             <div class="footer-columns">
                 <div class="footer-column">
-                    <h4>О Магазине</h4>
-                    <p>ShopName - ваш лучший выбор для стильной одежды и аксессуаров. Качество и доступные цены.</p>
+                    <h4>Дүкен туралы</h4>
+                    <p>ShopName - стильді киімдер мен аксессуарлар үшін сіздің ең жақсы таңдауыңыз. Сапа және қолжетімді бағалар.</p>
                 </div>
                 <div class="footer-column">
-                    <h4>Клиентам</h4>
+                    <h4>Клиенттерге</h4>
                     <ul>
-                        <li><a href="#">Доставка и оплата</a></li>
-                        <li><a href="#">Возврат товара</a></li>
-                        <li><a href="#">Таблица размеров</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Жеткізу және төлем</a></li>
+                        <li><a href="#">Тауарды қайтару</a></li>
+                        <li><a href="#">Өлшемдер кестесі</a></li>
+                        <li><a href="#">ЖҚС (FAQ)</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Контакты</h4>
-                    <p>Email: info@shopname.com</p>
-                    <p>Телефон: +7 (000) 000-00-00</p>
+                    <h4>Байланыс</h4>
+                    <p>Email: info@shopname.kz</p>
+                    <p>Телефон: +7 (700) 000-00-00</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-vk"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -114,7 +128,7 @@
                 </div>
             </div>
             <div class="copyright-text">
-                © <span id="current-year"></span> ShopName. Все права защищены.
+                © <span id="current-year"></span> ShopName. Барлық құқықтар қорғалған.
             </div>
         </div>
     </footer>
