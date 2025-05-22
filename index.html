@@ -5,19 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Коллекция Веб-Шаблонов | Готовые Решения</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Подключаем Font Awesome для иконок, если они понадобятся в hero кнопках или где-то еще -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="showcase-header">
+    <header class="showcase-header"> <!-- Этот хедер станет навигацией -->
         <div class="container">
-            <h1>Коллекция Премиум Шаблонов</h1>
-            <p>Современные, адаптивные и легко настраиваемые шаблоны для ваших проектов.</p>
+            <a href="index.html" class="site-logo">Template<span class="logo-accent">Hub</span></a>
+            <nav class="site-navigation">
+                <!-- Пример навигации, если понадобится
+                <ul>
+                    <li><a href="#about-us-section-id">О Нас</a></li>
+                    <li><a href="#contact-section-id">Контакты</a></li>
+                </ul>
+                -->
+            </nav>
         </div>
     </header>
 
+    <section class="hero-section-showcase">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Найдите Идеальный Шаблон для Вашего Проекта</h1>
+            <p>Современные, адаптивные и легко настраиваемые HTML-шаблоны, готовые к использованию.</p>
+            <div class="hero-cta">
+                <a href="#category-navigation-anchor" class="btn btn-hero-primary">Посмотреть Коллекцию <i class="fas fa-arrow-down"></i></a>
+                <!-- <a href="#" class="btn btn-hero-secondary">Узнать больше</a> -->
+            </div>
+        </div>
+    </section>
+
     <main class="showcase-main">
         <div class="container">
-
-            <!-- Навигация по категориям -->
+            <!-- Якорь для плавной прокрутки от кнопки в Hero -->
+            <div id="category-navigation-anchor" style="position: relative; top: -80px; height: 1px; pointer-events: none;"></div>
+            
             <nav class="category-navigation">
                 <h3>Быстрый переход:</h3>
                 <ul>
@@ -47,6 +69,8 @@
                                 <li>✓ Чистый HTML5 и CSS3 код</li>
                                 <li>✓ Стильный и современный вид</li>
                             </ul>
+                            <h4 class="features-subtitle">Рекомендации по изображениям:</h4>
+                            <p class="features-text">Фон (hero): `hero-bg.jpg` (1920x1080). Блюда: `dish1.jpg` (800x600). Галерея: `gallery-img1.jpg` (1000x700). Смотрите `README.txt` для деталей.</p>
                         </div>
                         <div class="template-actions">
                             <a href="restaurant-template/index.html" target="_blank" class="btn btn-primary">Демо</a>
@@ -72,6 +96,8 @@
                                 <li>✓ Четкие призывы к действию</li>
                                 <li>✓ Адаптивность для всех устройств</li>
                             </ul>
+                            <h4 class="features-subtitle">Рекомендации по изображениям:</h4>
+                            <p class="features-text">Мокап: `app-hero-mockup.png` (прозрачный фон). Иконки фич: `feature-icon-X.svg`. Скриншоты: `screenshotX.png`. Подробнее в `README.txt`.</p>
                         </div>
                         <div class="template-actions">
                             <a href="app-landing-template/index.html" target="_blank" class="btn btn-primary">Демо</a>
@@ -97,6 +123,8 @@
                                 <li>✓ Страница детального описания</li>
                                 <li>✓ Стильный e-commerce дизайн</li>
                             </ul>
+                            <h4 class="features-subtitle">Рекомендации по изображениям:</h4>
+                            <p class="features-text">Лого: `logo-shop.png`. Товары: `productX.jpg` (квадратные, ~800x800). Детали в `README.txt`.</p>
                         </div>
                         <div class="template-actions">
                             <a href="ecommerce-catalog-template/index.html" target="_blank" class="btn btn-primary">Демо</a>
@@ -126,6 +154,8 @@
                                 <li>✓ Элегантный и чистый дизайн</li>
                                 <li>✓ Оптимизирован для быстрой загрузки</li>
                             </ul>
+                             <h4 class="features-subtitle">Рекомендации по изображениям:</h4>
+                            <p class="features-text">Фото в галерее: `photoX.jpg` (горизонт./вертик.). Профиль: `profile.jpg`. Имена файлов в `data-src-large` для лайтбокса. См. `README.txt`.</p>
                         </div>
                         <div class="template-actions">
                             <a href="photographer-portfolio-template/index.html" target="_blank" class="btn btn-primary">Демо</a>
@@ -151,6 +181,8 @@
                                 <li>✓ Приятная типографика</li>
                                 <li>✓ Пример страницы поста</li>
                             </ul>
+                            <h4 class="features-subtitle">Рекомендации по изображениям:</h4>
+                            <p class="features-text">Превью поста: `post-imageX.jpg` (широкоформатные). Аватар: `author-avatar.jpg`. Детали в `README.txt`.</p>
                         </div>
                         <div class="template-actions">
                             <a href="simple-blog-template/index.html" target="_blank" class="btn btn-primary">Демо</a>
@@ -181,6 +213,8 @@
                                 <li>✓ Таймер обратного отсчета (JS)</li>
                                 <li>✓ Форма подписки на email</li>
                             </ul>
+                            <h4 class="features-subtitle">Рекомендации по изображениям:</h4>
+                            <p class="features-text">Фон: `background.jpg` (1920x1080 или больше). Логотип: замените текст `[ Ваш Логотип ]` на `<img>`. См. `README.txt`.</p>
                         </div>
                         <div class="template-actions">
                             <a href="coming-soon-template/index.html" target="_blank" class="btn btn-primary">Демо</a>
@@ -190,36 +224,35 @@
                 </section>
             </div> <!-- Закрытие .templates-grid для Специальных -->
 
-        </div>
+        </div> <!-- Закрытие .container в .showcase-main -->
     </main>
 
     <footer class="showcase-footer">
         <div class="container">
             <p>© <span id="current-year">2024</span> Ваше Имя / Название Студии. Все шаблоны созданы с ❤️.</p>
-            <p>Иконки от <a href="https://fontawesome.com/" target="_blank" rel="noopener">Font Awesome</a>, Шрифты от <a href="https://fonts.google.com/" target="_blank" rel="noopener">Google Fonts</a>.</p>
+            <p>Иконки от <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">Font Awesome</a>, Шрифты от <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a>.</p>
         </div>
     </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Обновление года в футере
             const currentYearSpan = document.getElementById('current-year');
             if (currentYearSpan) {
                 currentYearSpan.textContent = new Date().getFullYear();
             }
 
-            // Плавный скролл для навигации по категориям
+            // Плавный скролл для навигации по категориям (основной)
             document.querySelectorAll('.category-navigation a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
-                        // Учитываем высоту фиксированного хедера, если он есть и закрывает якорь
-                        // В данном дизайне хедера нет, но оставим на всякий случай
-                        // const headerOffset = document.querySelector('.showcase-header') ? document.querySelector('.showcase-header').offsetHeight : 0;
-                        const headerOffset = 0; // Если у вас появится фиксированный хедер навигации, настройте это
+                        const headerOffset = 0; // Настройте, если у вас фиксированный хедер навигации
                         const elementPosition = targetElement.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset - 20; // -20px для небольшого отступа сверху
-
+                        // -20 для небольшого отступа сверху, чтобы заголовок не прилипал
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset - 20; 
                         window.scrollTo({
                             top: offsetPosition,
                             behavior: "smooth"
@@ -227,6 +260,43 @@
                     }
                 });
             });
+
+            // Плавный скролл для кнопки "Посмотреть Коллекцию" из Hero секции
+             document.querySelectorAll('a[href="#category-navigation-anchor"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetElement = document.querySelector('#category-navigation-anchor');
+                    if (targetElement) {
+                         // Высота хедера, чтобы не перекрывал якорь при скролле
+                        const header = document.querySelector('.showcase-header');
+                        const headerOffset = header ? header.offsetHeight : 0;
+                        // Дополнительный отступ, чтобы навигация по категориям была видна полностью
+                        const additionalPadding = 20; 
+                        const offsetPosition = targetElement.offsetTop - headerOffset - additionalPadding;
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+
+            // JS для смены фона хедера при скролле (если хедер position: absolute или fixed)
+            const header = document.querySelector('.showcase-header');
+            if (header) { // Проверяем, что хедер существует
+                 // Проверяем, является ли хедер position: absolute или fixed
+                const headerIsSticky = window.getComputedStyle(header).position === 'absolute' || window.getComputedStyle(header).position === 'fixed';
+
+                if (headerIsSticky) {
+                    window.addEventListener('scroll', () => {
+                        if (window.scrollY > 50) { // 50px - точка скролла, когда хедер изменится
+                            header.classList.add('scrolled');
+                        } else {
+                            header.classList.remove('scrolled');
+                        }
+                    });
+                }
+            }
         });
     </script>
 </body>
